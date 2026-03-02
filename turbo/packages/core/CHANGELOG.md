@@ -1,5 +1,55 @@
 # Changelog
 
+## [8.29.0](https://github.com/qqqqww1/vm0/compare/core-v8.28.0...core-v8.29.0) (2026-03-02)
+
+
+### Features
+
+* add computer connector api for authenticated local tunneling via ngrok ([#2937](https://github.com/qqqqww1/vm0/issues/2937)) ([4f3fc4e](https://github.com/qqqqww1/vm0/commit/4f3fc4ebf137409a30b85b5882634a6bb8846836))
+* add gmail connector with nango platform integration ([#3065](https://github.com/qqqqww1/vm0/issues/3065)) ([d43dfe1](https://github.com/qqqqww1/vm0/commit/d43dfe1a5a868c8413ffd2b8a250d48dafc791cb))
+* add notify-slack preference to gate slack schedule notifications ([#2945](https://github.com/qqqqww1/vm0/issues/2945)) ([a0058e6](https://github.com/qqqqww1/vm0/commit/a0058e6d2c2a7f6c4d20c78a287488ba843cce02))
+* add organization scope support with clerk integration ([#2863](https://github.com/qqqqww1/vm0/issues/2863)) ([ec821d7](https://github.com/qqqqww1/vm0/commit/ec821d79768153368aa3ff213b31e3e219baf320))
+* allow users to set timezone preference for sandbox and scheduling ([#2866](https://github.com/qqqqww1/vm0/issues/2866)) ([89437c7](https://github.com/qqqqww1/vm0/commit/89437c733b4e34eee46009b20c99f455c5963289))
+* **api:** add backend support for agent detail page ([#2979](https://github.com/qqqqww1/vm0/issues/2979)) ([4103d8f](https://github.com/qqqqww1/vm0/commit/4103d8f66ccc9546bccc67454d139b8d1de04599))
+* **cli:** add --check-env flag to vm0 run commands ([#2760](https://github.com/qqqqww1/vm0/issues/2760)) ([f6711e0](https://github.com/qqqqww1/vm0/commit/f6711e0d047aa872c76f97c8cfaf1257d2f35fb0))
+* **cli:** add agent delete command ([#2767](https://github.com/qqqqww1/vm0/issues/2767)) ([11d555a](https://github.com/qqqqww1/vm0/commit/11d555ad5432a9893ddc37e55f89a58e7dd5657c))
+* **cli:** add computer connector support ([#3124](https://github.com/qqqqww1/vm0/issues/3124)) ([a950821](https://github.com/qqqqww1/vm0/commit/a9508213014337b0a4a7effb4756ed7056e3cb0f))
+* **connector:** add deel oauth2 connector ([#3401](https://github.com/qqqqww1/vm0/issues/3401)) ([8128da7](https://github.com/qqqqww1/vm0/commit/8128da7cb693bdb51b006edc7ed8cc1aae14b9c2))
+* **connector:** add docusign oauth2 connector ([#3402](https://github.com/qqqqww1/vm0/issues/3402)) ([2273b1c](https://github.com/qqqqww1/vm0/commit/2273b1c3db937c8c2e5794c0348f2d5a063c724e))
+* **connector:** add gmail connector feature flag ([#3381](https://github.com/qqqqww1/vm0/issues/3381)) ([50b45eb](https://github.com/qqqqww1/vm0/commit/50b45eb00469afce5b433e03e590fa0070c77458))
+* **connector:** add google sheets, docs, and drive oauth2 connectors ([#3403](https://github.com/qqqqww1/vm0/issues/3403)) ([97cca63](https://github.com/qqqqww1/vm0/commit/97cca638861824b887feaa3d97372028e8affdba))
+* **connector:** add mercury oauth2 connector ([#3397](https://github.com/qqqqww1/vm0/issues/3397)) ([a5f4e79](https://github.com/qqqqww1/vm0/commit/a5f4e794fe12e6250d770fef1d8ec444a5cdcec3))
+* **connector:** add strava and garmin connect oauth2 connectors ([#3399](https://github.com/qqqqww1/vm0/issues/3399)) ([2aa431a](https://github.com/qqqqww1/vm0/commit/2aa431ae1142234ee0d2add1438249540dc91ad8))
+* **connectors:** add dropbox oauth connector ([#3368](https://github.com/qqqqww1/vm0/issues/3368)) ([1dc5d4c](https://github.com/qqqqww1/vm0/commit/1dc5d4c151f986ded68c169b19bd7c9c6a07f4b6))
+* **connectors:** add feature flag for linear connector visibility ([#3372](https://github.com/qqqqww1/vm0/issues/3372)) ([f6da04e](https://github.com/qqqqww1/vm0/commit/f6da04e4653c62103975cb43f44d7c70067e4dc1))
+* **connectors:** add figma oauth connector ([#3369](https://github.com/qqqqww1/vm0/issues/3369)) ([4d93f59](https://github.com/qqqqww1/vm0/commit/4d93f59827c3567ba83ef115d90decc4ca7fa294))
+* **connectors:** add gmail oauth connector ([#3332](https://github.com/qqqqww1/vm0/issues/3332)) ([ca303b7](https://github.com/qqqqww1/vm0/commit/ca303b71916095e799c22b975f71216ea89df021))
+* **connectors:** add linear oauth connector ([#3366](https://github.com/qqqqww1/vm0/issues/3366)) ([f943498](https://github.com/qqqqww1/vm0/commit/f94349842e5501fe487d078fa7138a3010d65635))
+* **connectors:** add self-hosted slack connector ([#3281](https://github.com/qqqqww1/vm0/issues/3281)) ([13e92fd](https://github.com/qqqqww1/vm0/commit/13e92fde8468324ca7502fa8ded5eb60179eba05)), closes [#3279](https://github.com/qqqqww1/vm0/issues/3279)
+* **connectors:** remove linear connector feature flag ([#3394](https://github.com/qqqqww1/vm0/issues/3394)) ([bcb0266](https://github.com/qqqqww1/vm0/commit/bcb02665109aeda6e5c6052dcdaa8ebe261545e3))
+* **core:** add glm-5 model and fix model id casing ([#2889](https://github.com/qqqqww1/vm0/issues/2889)) ([f7dff90](https://github.com/qqqqww1/vm0/commit/f7dff9098110a983c8bf6c15740fa01010f09f5b)), closes [#2883](https://github.com/qqqqww1/vm0/issues/2883)
+* **core:** add user-targeted feature switch with enabled user ids ([#3451](https://github.com/qqqqww1/vm0/issues/3451)) ([9e1c37a](https://github.com/qqqqww1/vm0/commit/9e1c37ac3a66882f29db39d0d1b11f165bc12f42))
+* **email:** add email notifications and reply-to-continue via Resend ([#2836](https://github.com/qqqqww1/vm0/issues/2836)) ([fd6aa4c](https://github.com/qqqqww1/vm0/commit/fd6aa4c032a84f25e8c6a8cf4ba4cef5ff070bd9))
+* **platform:** add agent detail page with feature flag gating ([#2998](https://github.com/qqqqww1/vm0/issues/2998)) ([5386de0](https://github.com/qqqqww1/vm0/commit/5386de0662eb2a85e69040788e2ca08e7f976cba))
+* **platform:** add editable agent name and skills multi-select to config dialog ([#3216](https://github.com/qqqqww1/vm0/issues/3216)) ([50fc6f3](https://github.com/qqqqww1/vm0/commit/50fc6f3fc03d6595b9ee326df2dd88a1697eb837))
+* **runner:** inject agent name and scope env vars into sandbox runtime ([#3375](https://github.com/qqqqww1/vm0/issues/3375)) ([53a1d42](https://github.com/qqqqww1/vm0/commit/53a1d4211cf4dbb477b1fb92a2412b719d46d8a8))
+* **scope:** enable vm0 admin users to activate system scope ([#3378](https://github.com/qqqqww1/vm0/issues/3378)) ([c4d05ac](https://github.com/qqqqww1/vm0/commit/c4d05acc257e7777dab8822362e07437add11511))
+* **storage:** add optional volume support for graceful degradation ([#2929](https://github.com/qqqqww1/vm0/issues/2929)) ([fd052a4](https://github.com/qqqqww1/vm0/commit/fd052a4fef4b2157bb1b1a7a2a0eaccffa6ff262))
+* use ngrok reserved domains for computer connector ([#3116](https://github.com/qqqqww1/vm0/issues/3116)) ([7e30f2c](https://github.com/qqqqww1/vm0/commit/7e30f2c83f7fb4f82dd0b1e9aed38267ca5919f9))
+* **vsock:** add environment variable support to exec/spawn_watch ([#2736](https://github.com/qqqqww1/vm0/issues/2736)) ([6f93486](https://github.com/qqqqww1/vm0/commit/6f9348601ae5736e20a8c32a2064ac394a70e70b))
+* **web:** add Notion OAuth connector support ([#2738](https://github.com/qqqqww1/vm0/issues/2738)) ([a201b5d](https://github.com/qqqqww1/vm0/commit/a201b5d7ffdd081b4a9f299297bad0e06fa890b1))
+* **web:** update connector oauth scopes and add deel pkce support ([#3459](https://github.com/qqqqww1/vm0/issues/3459)) ([3c9926a](https://github.com/qqqqww1/vm0/commit/3c9926ac223b3458c9ffc38600e0c19cc552b044))
+
+
+### Bug Fixes
+
+* **api:** use framework-based filename lookup in instructions api ([#3192](https://github.com/qqqqww1/vm0/issues/3192)) ([607608a](https://github.com/qqqqww1/vm0/commit/607608aa76b4237e2692dec598318a614e44ac02))
+* exclude connector-provided secrets from missing-secrets checks ([#2752](https://github.com/qqqqww1/vm0/issues/2752)) ([3dc98d4](https://github.com/qqqqww1/vm0/commit/3dc98d47451a2084b50a9a6ebce2f2ccb31d2833)), closes [#2747](https://github.com/qqqqww1/vm0/issues/2747)
+* **platform:** resolve empty logs page for scoped agents ([#3392](https://github.com/qqqqww1/vm0/issues/3392)) ([d611bd0](https://github.com/qqqqww1/vm0/commit/d611bd026a6f74a27707c3877c1c4f9cb19acb65))
+* remove nango integration and simplify oauth flow ([#3105](https://github.com/qqqqww1/vm0/issues/3105)) ([a1c601e](https://github.com/qqqqww1/vm0/commit/a1c601e2217456d16b1e34de0a41fe61a0026e7a))
+* **schedule:** reject schedule creation for organization-scoped agents ([#3420](https://github.com/qqqqww1/vm0/issues/3420)) ([7945a10](https://github.com/qqqqww1/vm0/commit/7945a10ea3d2c21e8bde0516326f98804e61ea87))
+* **web:** disable json query to fix flaky ambiguous-prefix test ([#2701](https://github.com/qqqqww1/vm0/issues/2701)) ([a5f8e8a](https://github.com/qqqqww1/vm0/commit/a5f8e8a375a3a84c46518780201b66f75ea845a3))
+
 ## [8.28.0](https://github.com/vm0-ai/vm0/compare/core-v8.27.0...core-v8.28.0) (2026-03-02)
 
 

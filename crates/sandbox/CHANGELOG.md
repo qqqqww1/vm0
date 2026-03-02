@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.7.0](https://github.com/qqqqww1/vm0/compare/sandbox-v0.6.0...sandbox-v0.7.0) (2026-03-02)
+
+
+### Features
+
+* **runner:** add mitmproxy integration to benchmark command ([#3027](https://github.com/qqqqww1/vm0/issues/3027)) ([7dab1cd](https://github.com/qqqqww1/vm0/commit/7dab1cd38f8c4e58fbdca98890b5a3b21bf53e9e))
+* **runner:** add snapshot subcommand with content-addressable caching ([#2903](https://github.com/qqqqww1/vm0/issues/2903)) ([c00ab8d](https://github.com/qqqqww1/vm0/commit/c00ab8d387bcdca0917ed1efd13a870c032adf44))
+* **runner:** implement rust runner crate for job polling and execution ([#2722](https://github.com/qqqqww1/vm0/issues/2722)) ([38b494e](https://github.com/qqqqww1/vm0/commit/38b494e563f0c87486419a36df265fe5c0d8c032))
+* **sandbox-fc:** per-sandbox proxy control with dual-queue netns pool ([#3035](https://github.com/qqqqww1/vm0/issues/3035)) ([deda648](https://github.com/qqqqww1/vm0/commit/deda64875625f49f4a72513d2b286dba12be0986)), closes [#3033](https://github.com/qqqqww1/vm0/issues/3033)
+* **vsock:** add environment variable support to exec/spawn_watch ([#2736](https://github.com/qqqqww1/vm0/issues/2736)) ([6f93486](https://github.com/qqqqww1/vm0/commit/6f9348601ae5736e20a8c32a2064ac394a70e70b))
+* **vsock:** add sudo flag to exec/spawn_watch protocol ([#2985](https://github.com/qqqqww1/vm0/issues/2985)) ([9c42331](https://github.com/qqqqww1/vm0/commit/9c423314a07f8de0f1b92ea3adca4efa4c6de987)), closes [#2984](https://github.com/qqqqww1/vm0/issues/2984)
+
+
+### Bug Fixes
+
+* **crates:** remove dead code and fix type inconsistency ([#2826](https://github.com/qqqqww1/vm0/issues/2826)) ([63b19d5](https://github.com/qqqqww1/vm0/commit/63b19d57ed29dfbf8c1b3c79a43bc1ebf6a94d96))
+
 ## [0.6.0](https://github.com/vm0-ai/vm0/compare/sandbox-v0.5.0...sandbox-v0.6.0) (2026-02-23)
 
 
