@@ -1,5 +1,59 @@
 # Changelog
 
+## [9.41.0](https://github.com/qqqqww1/vm0/compare/cli-v9.40.3...cli-v9.41.0) (2026-03-02)
+
+
+### Features
+
+* add notify-slack preference to gate slack schedule notifications ([#2945](https://github.com/qqqqww1/vm0/issues/2945)) ([a0058e6](https://github.com/qqqqww1/vm0/commit/a0058e6d2c2a7f6c4d20c78a287488ba843cce02))
+* add organization scope support with clerk integration ([#2863](https://github.com/qqqqww1/vm0/issues/2863)) ([ec821d7](https://github.com/qqqqww1/vm0/commit/ec821d79768153368aa3ff213b31e3e219baf320))
+* allow users to set timezone preference for sandbox and scheduling ([#2866](https://github.com/qqqqww1/vm0/issues/2866)) ([89437c7](https://github.com/qqqqww1/vm0/commit/89437c733b4e34eee46009b20c99f455c5963289))
+* **cli:** add --check-env flag to vm0 run commands ([#2760](https://github.com/qqqqww1/vm0/issues/2760)) ([f6711e0](https://github.com/qqqqww1/vm0/commit/f6711e0d047aa872c76f97c8cfaf1257d2f35fb0))
+* **cli:** add agent delete command ([#2767](https://github.com/qqqqww1/vm0/issues/2767)) ([11d555a](https://github.com/qqqqww1/vm0/commit/11d555ad5432a9893ddc37e55f89a58e7dd5657c))
+* **cli:** add auto-pagination to logs command ([#2855](https://github.com/qqqqww1/vm0/issues/2855)) ([e487a1a](https://github.com/qqqqww1/vm0/commit/e487a1a687146002f3d7abf2b4904b507b3b29c5))
+* **cli:** add computer connector support ([#3124](https://github.com/qqqqww1/vm0/issues/3124)) ([a950821](https://github.com/qqqqww1/vm0/commit/a9508213014337b0a4a7effb4756ed7056e3cb0f))
+* **cli:** add vm0 upgrade command ([#3305](https://github.com/qqqqww1/vm0/issues/3305)) ([7150d0f](https://github.com/qqqqww1/vm0/commit/7150d0f0bdd1f2ab583d3b3346e38f91cbcfdc26))
+* **cli:** detect field typos in vm0.yaml agent definitions ([#3307](https://github.com/qqqqww1/vm0/issues/3307)) ([c3c5969](https://github.com/qqqqww1/vm0/commit/c3c59695f2e3d4a1cc04ae4be765d8d0d913901e))
+* **cli:** enable GitHub URL compose without experimental flag ([#2728](https://github.com/qqqqww1/vm0/issues/2728)) ([3158138](https://github.com/qqqqww1/vm0/commit/315813840b9590aca5d5f52575dcb24ddfebbae2)), closes [#2724](https://github.com/qqqqww1/vm0/issues/2724)
+* **email:** add email notifications and reply-to-continue via Resend ([#2836](https://github.com/qqqqww1/vm0/issues/2836)) ([fd6aa4c](https://github.com/qqqqww1/vm0/commit/fd6aa4c032a84f25e8c6a8cf4ba4cef5ff070bd9))
+* **platform:** add environment variables setup page ([#2737](https://github.com/qqqqww1/vm0/issues/2737)) ([d33842a](https://github.com/qqqqww1/vm0/commit/d33842a2e5e72eb5bfebe66cd442135b49f35a51))
+* **scope:** enable vm0 admin users to activate system scope ([#3378](https://github.com/qqqqww1/vm0/issues/3378)) ([c4d05ac](https://github.com/qqqqww1/vm0/commit/c4d05acc257e7777dab8822362e07437add11511))
+* **slack:** send DM notification when scheduled agent run completes ([#2720](https://github.com/qqqqww1/vm0/issues/2720)) ([77cf47b](https://github.com/qqqqww1/vm0/commit/77cf47b9911a28394bd0b851d75183ea22764bab))
+* **storage:** add optional volume support for graceful degradation ([#2929](https://github.com/qqqqww1/vm0/issues/2929)) ([fd052a4](https://github.com/qqqqww1/vm0/commit/fd052a4fef4b2157bb1b1a7a2a0eaccffa6ff262))
+
+
+### Bug Fixes
+
+* **api:** use framework-based filename lookup in instructions api ([#3192](https://github.com/qqqqww1/vm0/issues/3192)) ([607608a](https://github.com/qqqqww1/vm0/commit/607608aa76b4237e2692dec598318a614e44ac02))
+* **ci:** unique runner name per metal host ([#3141](https://github.com/qqqqww1/vm0/issues/3141)) ([ad5dcf4](https://github.com/qqqqww1/vm0/commit/ad5dcf49e603392ac476d2e44a033e635756d47b))
+* **cli:** add environment and release to sentry config and prevent test leaks ([#2706](https://github.com/qqqqww1/vm0/issues/2706)) ([56578ad](https://github.com/qqqqww1/vm0/commit/56578adccbdb20b8299ef0d66e44526d4eaf2a1d))
+* **cli:** add error handling to connector connect and display error.cause ([#2682](https://github.com/qqqqww1/vm0/issues/2682)) ([d19a29e](https://github.com/qqqqww1/vm0/commit/d19a29e5e2134de5fd7b28bb1ee16467cb6d7046))
+* **cli:** add missing try/catch to auth and cook commands ([#2690](https://github.com/qqqqww1/vm0/issues/2690)) ([216758d](https://github.com/qqqqww1/vm0/commit/216758de8f0a860dde5c5b69df9ea15e0eddccb7))
+* **cli:** add missing try/catch to onboard command ([#2699](https://github.com/qqqqww1/vm0/issues/2699)) ([cec0044](https://github.com/qqqqww1/vm0/commit/cec00445c45b0ce6ff2cc8a5e83191442b85d126))
+* **cli:** check dependencies before connecting computer connector ([#3146](https://github.com/qqqqww1/vm0/issues/3146)) ([1e9d814](https://github.com/qqqqww1/vm0/commit/1e9d814ea5b49fbe687bbab3e6b8357fbdbe7619))
+* **cli:** test release-please cli version bump ([#3179](https://github.com/qqqqww1/vm0/issues/3179)) ([8eb6b9e](https://github.com/qqqqww1/vm0/commit/8eb6b9e811ac438d2788181fc6f3e5c70890dd53))
+* **cli:** use fake timers in usage tests to avoid time-dependent failures ([#3032](https://github.com/qqqqww1/vm0/issues/3032)) ([9cd34bf](https://github.com/qqqqww1/vm0/commit/9cd34bfe0a4b7d1ca3fe3f413fca2ab9d7edf6b5))
+* **cli:** use nullish coalescing for sentry environment fallback ([#2709](https://github.com/qqqqww1/vm0/issues/2709)) ([b70248f](https://github.com/qqqqww1/vm0/commit/b70248fa7e0685091ddbbdd3de2f7a2747df23c8))
+* **e2e:** make agent names unique to prevent compose config collisions ([#3147](https://github.com/qqqqww1/vm0/issues/3147)) ([022c83f](https://github.com/qqqqww1/vm0/commit/022c83fcb4dd21135b50964d71f8cac193d42254))
+* **e2e:** make secret and variable names unique in t20-schedule test ([#3149](https://github.com/qqqqww1/vm0/issues/3149)) ([4ef861f](https://github.com/qqqqww1/vm0/commit/4ef861f72b361bf9a66201f512e58a8d65a40261))
+* exclude connector-provided secrets from missing-secrets checks ([#2752](https://github.com/qqqqww1/vm0/issues/2752)) ([3dc98d4](https://github.com/qqqqww1/vm0/commit/3dc98d47451a2084b50a9a6ebce2f2ccb31d2833)), closes [#2747](https://github.com/qqqqww1/vm0/issues/2747)
+* **runner:** add path validation and ci hash guards ([#3161](https://github.com/qqqqww1/vm0/issues/3161)) ([c5313ff](https://github.com/qqqqww1/vm0/commit/c5313ffdaee030c5fb3d48b950c8d7b6e36e90ae))
+* **test:** remove vi.unstubAllEnvs from CLI tests and fix compose job race condition ([#2695](https://github.com/qqqqww1/vm0/issues/2695)) ([04ab29b](https://github.com/qqqqww1/vm0/commit/04ab29bf89201bb921d6a2f63b9ea4e3f2ab899d))
+* **web:** disable json query to fix flaky ambiguous-prefix test ([#2701](https://github.com/qqqqww1/vm0/issues/2701)) ([a5f8e8a](https://github.com/qqqqww1/vm0/commit/a5f8e8a375a3a84c46518780201b66f75ea845a3))
+
+
+### Performance Improvements
+
+* **ci:** deploy runner to all metal hosts in parallel ([#3134](https://github.com/qqqqww1/vm0/issues/3134)) ([88152d3](https://github.com/qqqqww1/vm0/commit/88152d30f602490b463ce6049d327c67d21516cb))
+* **ci:** increase runner e2e parallelism to 5 per host ([#3135](https://github.com/qqqqww1/vm0/issues/3135)) ([d81e066](https://github.com/qqqqww1/vm0/commit/d81e066c9b6b3520ba6a734b0b62bd2ddb030f5f))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @vm0/core bumped to 8.29.0
+
 ## [9.40.3](https://github.com/vm0-ai/vm0/compare/cli-v9.40.2...cli-v9.40.3) (2026-03-02)
 
 

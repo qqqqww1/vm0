@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.13.0](https://github.com/qqqqww1/vm0/compare/guest-download-v0.12.3...guest-download-v0.13.0) (2026-03-02)
+
+
+### Features
+
+* **guest-download:** log download url ([#3323](https://github.com/qqqqww1/vm0/issues/3323)) ([78a6a26](https://github.com/qqqqww1/vm0/commit/78a6a26df02ae3c8ed5b9d3243edbe125f52db30))
+
+
+### Bug Fixes
+
+* **guest-download:** only treat 404 as non-fatal for artifact downloads ([#2900](https://github.com/qqqqww1/vm0/issues/2900)) ([8711a0f](https://github.com/qqqqww1/vm0/commit/8711a0f5cfad3ac0fa8eda31ff74d48e3fbcde6e))
+* **guest-download:** retry on 429 rate limiting ([#2911](https://github.com/qqqqww1/vm0/issues/2911)) ([8913f1d](https://github.com/qqqqww1/vm0/commit/8913f1d0da2d36cbbf286fab12a6bef6ff4d14aa)), closes [#2905](https://github.com/qqqqww1/vm0/issues/2905)
+* **guest-download:** skip retry on 4xx errors and log failed url ([#2846](https://github.com/qqqqww1/vm0/issues/2846)) ([8579be9](https://github.com/qqqqww1/vm0/commit/8579be91fa132202f4d0b7361e3fe602fc538e3d))
+* **guest-download:** use is_valid_url for artifact and preserve panic info ([#2827](https://github.com/qqqqww1/vm0/issues/2827)) ([55e6b66](https://github.com/qqqqww1/vm0/commit/55e6b660e28f5c7e6744cc2850f884eba2e9296b))
+
 ## [0.12.3](https://github.com/vm0-ai/vm0/compare/guest-download-v0.12.2...guest-download-v0.12.3) (2026-03-02)
 
 

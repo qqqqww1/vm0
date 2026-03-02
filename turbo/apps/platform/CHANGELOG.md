@@ -1,5 +1,83 @@
 # Changelog
 
+## [0.76.0](https://github.com/qqqqww1/vm0/compare/platform-v0.75.1...platform-v0.76.0) (2026-03-02)
+
+
+### Features
+
+* add computer connector api for authenticated local tunneling via ngrok ([#2937](https://github.com/qqqqww1/vm0/issues/2937)) ([4f3fc4e](https://github.com/qqqqww1/vm0/commit/4f3fc4ebf137409a30b85b5882634a6bb8846836))
+* add gmail connector with nango platform integration ([#3065](https://github.com/qqqqww1/vm0/issues/3065)) ([d43dfe1](https://github.com/qqqqww1/vm0/commit/d43dfe1a5a868c8413ffd2b8a250d48dafc791cb))
+* add markdown preview for prompts, slack image hints, and platform tests ([#2991](https://github.com/qqqqww1/vm0/issues/2991)) ([35da51b](https://github.com/qqqqww1/vm0/commit/35da51b563330c45444e1cb16b3de566519d2c07))
+* **api:** add backend support for agent detail page ([#2979](https://github.com/qqqqww1/vm0/issues/2979)) ([4103d8f](https://github.com/qqqqww1/vm0/commit/4103d8f66ccc9546bccc67454d139b8d1de04599))
+* **connector:** add deel oauth2 connector ([#3401](https://github.com/qqqqww1/vm0/issues/3401)) ([8128da7](https://github.com/qqqqww1/vm0/commit/8128da7cb693bdb51b006edc7ed8cc1aae14b9c2))
+* **connector:** add docusign oauth2 connector ([#3402](https://github.com/qqqqww1/vm0/issues/3402)) ([2273b1c](https://github.com/qqqqww1/vm0/commit/2273b1c3db937c8c2e5794c0348f2d5a063c724e))
+* **connector:** add gmail connector feature flag ([#3381](https://github.com/qqqqww1/vm0/issues/3381)) ([50b45eb](https://github.com/qqqqww1/vm0/commit/50b45eb00469afce5b433e03e590fa0070c77458))
+* **connector:** add google sheets, docs, and drive oauth2 connectors ([#3403](https://github.com/qqqqww1/vm0/issues/3403)) ([97cca63](https://github.com/qqqqww1/vm0/commit/97cca638861824b887feaa3d97372028e8affdba))
+* **connector:** add mercury oauth2 connector ([#3397](https://github.com/qqqqww1/vm0/issues/3397)) ([a5f4e79](https://github.com/qqqqww1/vm0/commit/a5f4e794fe12e6250d770fef1d8ec444a5cdcec3))
+* **connector:** add strava and garmin connect oauth2 connectors ([#3399](https://github.com/qqqqww1/vm0/issues/3399)) ([2aa431a](https://github.com/qqqqww1/vm0/commit/2aa431ae1142234ee0d2add1438249540dc91ad8))
+* **connectors:** add dropbox oauth connector ([#3368](https://github.com/qqqqww1/vm0/issues/3368)) ([1dc5d4c](https://github.com/qqqqww1/vm0/commit/1dc5d4c151f986ded68c169b19bd7c9c6a07f4b6))
+* **connectors:** add feature flag for linear connector visibility ([#3372](https://github.com/qqqqww1/vm0/issues/3372)) ([f6da04e](https://github.com/qqqqww1/vm0/commit/f6da04e4653c62103975cb43f44d7c70067e4dc1))
+* **connectors:** add figma oauth connector ([#3369](https://github.com/qqqqww1/vm0/issues/3369)) ([4d93f59](https://github.com/qqqqww1/vm0/commit/4d93f59827c3567ba83ef115d90decc4ca7fa294))
+* **connectors:** add gmail oauth connector ([#3332](https://github.com/qqqqww1/vm0/issues/3332)) ([ca303b7](https://github.com/qqqqww1/vm0/commit/ca303b71916095e799c22b975f71216ea89df021))
+* **connectors:** add linear oauth connector ([#3366](https://github.com/qqqqww1/vm0/issues/3366)) ([f943498](https://github.com/qqqqww1/vm0/commit/f94349842e5501fe487d078fa7138a3010d65635))
+* **connectors:** add self-hosted slack connector ([#3281](https://github.com/qqqqww1/vm0/issues/3281)) ([13e92fd](https://github.com/qqqqww1/vm0/commit/13e92fde8468324ca7502fa8ded5eb60179eba05)), closes [#3279](https://github.com/qqqqww1/vm0/issues/3279)
+* **connectors:** add self-hosted slack connector ([#3286](https://github.com/qqqqww1/vm0/issues/3286)) ([6089289](https://github.com/qqqqww1/vm0/commit/608928923103497eadee7c832c9103d9545aa826))
+* **connectors:** remove linear connector feature flag ([#3394](https://github.com/qqqqww1/vm0/issues/3394)) ([bcb0266](https://github.com/qqqqww1/vm0/commit/bcb02665109aeda6e5c6052dcdaa8ebe261545e3))
+* **core:** add user-targeted feature switch with enabled user ids ([#3451](https://github.com/qqqqww1/vm0/issues/3451)) ([9e1c37a](https://github.com/qqqqww1/vm0/commit/9e1c37ac3a66882f29db39d0d1b11f165bc12f42))
+* **deploy:** add self-hosted deployment support with docker and local auth ([#2718](https://github.com/qqqqww1/vm0/issues/2718)) ([498da5e](https://github.com/qqqqww1/vm0/commit/498da5e0a411a034df83c18c00fc287143dc0259))
+* owner inline editing for agent instructions ([#3015](https://github.com/qqqqww1/vm0/issues/3015)) ([e7022c8](https://github.com/qqqqww1/vm0/commit/e7022c848b7b247ee6f2475c204bfb656588c5ad))
+* **platform:** add agent detail page with feature flag gating ([#2998](https://github.com/qqqqww1/vm0/issues/2998)) ([5386de0](https://github.com/qqqqww1/vm0/commit/5386de0662eb2a85e69040788e2ca08e7f976cba))
+* **platform:** add agent detail routes and shared signals ([#2989](https://github.com/qqqqww1/vm0/issues/2989)) ([ddf6fca](https://github.com/qqqqww1/vm0/commit/ddf6fca91c2737231a75b77beca2efb3d9bdc8f4))
+* **platform:** add agent log detail as nested sub-route ([#3418](https://github.com/qqqqww1/vm0/issues/3418)) ([f4bac30](https://github.com/qqqqww1/vm0/commit/f4bac30730979d345f0bc2d9dfbc36caf9b2459f))
+* **platform:** add agent logs and connections pages ([#3017](https://github.com/qqqqww1/vm0/issues/3017)) ([cf943b2](https://github.com/qqqqww1/vm0/commit/cf943b224b55438152ee67d339c60894709133a8))
+* **platform:** add config dialog and run dialog for agent detail page ([#3016](https://github.com/qqqqww1/vm0/issues/3016)) ([7811f00](https://github.com/qqqqww1/vm0/commit/7811f0045c022856d283174722cfacf6ced72b7f))
+* **platform:** add connector management to settings page ([#2769](https://github.com/qqqqww1/vm0/issues/2769)) ([418bc1e](https://github.com/qqqqww1/vm0/commit/418bc1e2dd6afb94b3caca84abf260bf542359c8)), closes [#2766](https://github.com/qqqqww1/vm0/issues/2766)
+* **platform:** add connector-based environment variable setup ([#2847](https://github.com/qqqqww1/vm0/issues/2847)) ([7a0004f](https://github.com/qqqqww1/vm0/commit/7a0004f3c0436e53d591f1308b7ec5b59d56f226))
+* **platform:** add editable agent name and skills multi-select to config dialog ([#3216](https://github.com/qqqqww1/vm0/issues/3216)) ([50fc6f3](https://github.com/qqqqww1/vm0/commit/50fc6f3fc03d6595b9ee326df2dd88a1697eb837))
+* **platform:** add environment variables setup page ([#2737](https://github.com/qqqqww1/vm0/issues/2737)) ([d33842a](https://github.com/qqqqww1/vm0/commit/d33842a2e5e72eb5bfebe66cd442135b49f35a51))
+* **platform:** add incremental polling for log detail auto-refresh ([#2716](https://github.com/qqqqww1/vm0/issues/2716)) ([aad0134](https://github.com/qqqqww1/vm0/commit/aad0134608f0d8af1f55bbe6cda6bcac8972d451))
+* **platform:** add lint rule enforcing render mode in tests ([#2802](https://github.com/qqqqww1/vm0/issues/2802)) ([2c8de3b](https://github.com/qqqqww1/vm0/commit/2c8de3b70741f74ea56c17c3f64cdb1f974d7965))
+* **platform:** add schedule management dialog and enhanced cron options ([#3211](https://github.com/qqqqww1/vm0/issues/3211)) ([d1f30aa](https://github.com/qqqqww1/vm0/commit/d1f30aa17651a80964296e3c1a677049586b9caa))
+* **platform:** add schedule summary tooltip to agent header ([#3221](https://github.com/qqqqww1/vm0/issues/3221)) ([1032c95](https://github.com/qqqqww1/vm0/commit/1032c95b0f9e2d787965f047f4e13e965c62cef7))
+* **platform:** detect and display missing secrets for agents ([#2664](https://github.com/qqqqww1/vm0/issues/2664)) ([e43fb63](https://github.com/qqqqww1/vm0/commit/e43fb63d574f3f614254e702c76270b59381fedf))
+* **settings:** improve ui consistency and add success notifications ([#2976](https://github.com/qqqqww1/vm0/issues/2976)) ([6418997](https://github.com/qqqqww1/vm0/commit/6418997a206901e7739c6398c9129474449c0e66))
+* **slack:** move settings to platform integrations page ([#2797](https://github.com/qqqqww1/vm0/issues/2797)) ([030e41f](https://github.com/qqqqww1/vm0/commit/030e41fa55e7f7eeebb811f6619ad84c954de173))
+* **slack:** redirect to provider setup after connect ([#2854](https://github.com/qqqqww1/vm0/issues/2854)) ([3701bf6](https://github.com/qqqqww1/vm0/commit/3701bf66ad61c8d2ed525e2f97547cfa4bca8d82))
+* **web:** update connector oauth scopes and add deel pkce support ([#3459](https://github.com/qqqqww1/vm0/issues/3459)) ([3c9926a](https://github.com/qqqqww1/vm0/commit/3c9926ac223b3458c9ffc38600e0c19cc552b044))
+
+
+### Bug Fixes
+
+* hide connect button while polling ([#3107](https://github.com/qqqqww1/vm0/issues/3107)) ([be3af5d](https://github.com/qqqqww1/vm0/commit/be3af5da3a372d5f110410279e10db860dfabf75))
+* **platform:** add bg-card to agent instructions container ([#3454](https://github.com/qqqqww1/vm0/issues/3454)) ([5319877](https://github.com/qqqqww1/vm0/commit/5319877e6071c47e779f4c8141be8c950f1a8014))
+* **platform:** connector setup improvements and trailing ? fix ([#2857](https://github.com/qqqqww1/vm0/issues/2857)) ([5f65661](https://github.com/qqqqww1/vm0/commit/5f656610669ccc9999d709f0b8f06f6f15f4ef49))
+* **platform:** enforce MSW onUnhandledRequest error mode ([#2791](https://github.com/qqqqww1/vm0/issues/2791)) ([ce092a5](https://github.com/qqqqww1/vm0/commit/ce092a514d198fef5cb90b0ae72818c874c2a383))
+* **platform:** fix agents page missing vars, connector suggestions, and stale state ([#2946](https://github.com/qqqqww1/vm0/issues/2946)) ([b20addf](https://github.com/qqqqww1/vm0/commit/b20addf0266a0326ee5f263d54ba299f7e71546e))
+* **platform:** fix bash error overflow and markdown table light mode ([#2891](https://github.com/qqqqww1/vm0/issues/2891)) ([98c89fd](https://github.com/qqqqww1/vm0/commit/98c89fd53acfe601bc818b1b48b5d67e30676374))
+* **platform:** improve environment-variables-setup connector UI ([#2932](https://github.com/qqqqww1/vm0/issues/2932)) ([fbc02b1](https://github.com/qqqqww1/vm0/commit/fbc02b16f832ee35fe914210f5cd1224737bf973))
+* **platform:** persist model selection for providers with predefined models ([#2925](https://github.com/qqqqww1/vm0/issues/2925)) ([cf014c0](https://github.com/qqqqww1/vm0/commit/cf014c0a6c4a439748251023937b97f5d60dcf6c)), closes [#2923](https://github.com/qqqqww1/vm0/issues/2923)
+* **platform:** resolve empty logs page for scoped agents ([#3392](https://github.com/qqqqww1/vm0/issues/3392)) ([d611bd0](https://github.com/qqqqww1/vm0/commit/d611bd026a6f74a27707c3877c1c4f9cb19acb65))
+* **platform:** show skeleton loading state instead of flashing empty state in secrets/vars lists ([#2840](https://github.com/qqqqww1/vm0/issues/2840)) ([cab7682](https://github.com/qqqqww1/vm0/commit/cab7682483252324f0d4e14dfa07b67fceb5ac0a)), closes [#2658](https://github.com/qqqqww1/vm0/issues/2658)
+* **platform:** show workspace agent in slack settings when not owned by user ([#2918](https://github.com/qqqqww1/vm0/issues/2918)) ([07f5451](https://github.com/qqqqww1/vm0/commit/07f54516e32bca44c3fa61cff0b696a390cf741c))
+* **platform:** use existing schedule name when editing and fix error parsing ([#3421](https://github.com/qqqqww1/vm0/issues/3421)) ([810345b](https://github.com/qqqqww1/vm0/commit/810345b073a40712624cfd714010e13e615af688))
+* remove eslint-disable for unused vars in error boundary ([#3289](https://github.com/qqqqww1/vm0/issues/3289)) ([f6e9c79](https://github.com/qqqqww1/vm0/commit/f6e9c79716d34cd2a72c97ebf7e9297f20b52fed))
+* remove nango integration and simplify oauth flow ([#3105](https://github.com/qqqqww1/vm0/issues/3105)) ([a1c601e](https://github.com/qqqqww1/vm0/commit/a1c601e2217456d16b1e34de0a41fe61a0026e7a))
+* resolve double scrollbar on mobile safari in agent detail page ([#3386](https://github.com/qqqqww1/vm0/issues/3386)) ([2e75a81](https://github.com/qqqqww1/vm0/commit/2e75a818b1985ea607c64dd453512d0fbfe9c50a)), closes [#3229](https://github.com/qqqqww1/vm0/issues/3229)
+* sanitize mock data and rename platform env var ([#2912](https://github.com/qqqqww1/vm0/issues/2912)) ([b56b513](https://github.com/qqqqww1/vm0/commit/b56b513076eddc3d25b4e106e005b2ab9bc4f518))
+* **slack:** preserve scope prefix in agent navigation and selection ([#3223](https://github.com/qqqqww1/vm0/issues/3223)) ([61bd643](https://github.com/qqqqww1/vm0/commit/61bd643a4e6b0f2977dddf881fd7f5718382e6a6))
+
+
+### Performance Improvements
+
+* **platform:** skip rendering in signal-only tests ([#2798](https://github.com/qqqqww1/vm0/issues/2798)) ([e438809](https://github.com/qqqqww1/vm0/commit/e4388091362b0e7812ea859c9a085061a99a6acf))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @vm0/core bumped to 8.29.0
+
 ## [0.75.1](https://github.com/vm0-ai/vm0/compare/platform-v0.75.0...platform-v0.75.1) (2026-03-02)
 
 
